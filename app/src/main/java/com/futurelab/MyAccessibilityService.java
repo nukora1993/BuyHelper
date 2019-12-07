@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.accessibility.AccessibilityEvent;
 import android.view.accessibility.AccessibilityNodeInfo;
 import android.view.accessibility.AccessibilityWindowInfo;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 
@@ -30,6 +31,7 @@ public class MyAccessibilityService extends AccessibilityService {
     protected void onServiceConnected() {
         super.onServiceConnected();
         Log.d(TAG,"onServiceConnected");
+        Toast.makeText(this,"辅助服务已成功开启",Toast.LENGTH_LONG).show();
 
 
     }

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<!--    当前时间显示-->
+    <TextView
+        android:layout_margin="5dp"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="match_parent"
+        android:text="HH:MM:SS"
+        android:id="@+id/text_view_cur_time"
+        android:layout_gravity="start"
+        android:gravity="center"
+        android:textSize="25sp"
+        />
+    <!--    打开权限按钮-->
+    <Button
+        android:layout_margin="5dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:text="开启服务"
+        android:id="@+id/button_allow_access_permission"
+
+        android:gravity="center"
+
+        android:textSize="25sp"/>
+    <!--    模拟点击按钮-->
+    <Button
+        android:layout_margin="5dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:text="模拟点击"
+        android:id="@+id/button_sim_click"
+
+        android:gravity="center"
+        android:visibility="gone"
+
+        android:textSize="25sp"/>
+<!--    退出按钮-->
+    <Button
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="关闭"
+        android:id="@+id/button_exit"
+
+
+        android:textSize="25sp"/>
+
+</LinearLayout>
